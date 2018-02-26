@@ -164,10 +164,10 @@ ul.validatorlinks {
   color: #fff;
 }
 
-#sidebar .navigation ul li a:hover span {
+/*#sidebar .navigation ul li a:hover span {
   left: 16px;
   transform: translateX(0);
-}
+}*/
 
 #sidebar .navigation ul li.selected a span {
   left: 10px;
