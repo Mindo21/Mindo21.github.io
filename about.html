@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <script src="js/sidebar.js"></script>
@@ -10,11 +10,11 @@
   </head>
   <body>
 
-    <div id="sidebar">
-      <div class="icon" onclick="toggleNavbar()">
-        <div class="hamburger">
-        </div>
-      </div>
+    <section id="sidebar" class="active">
+      <figure class="icon" onclick="toggleNavbar()">
+        <figure class="hamburger">
+        </figure>
+      </figure>
 
       <nav class="navigation">
         <a href="http://www.port.ac.uk/" target="_blank" class="logo">
@@ -37,50 +37,57 @@
           <li><a href="https://jigsaw.w3.org/css-validator/check?uri=referer&" target="_blank" onclick="loseFocus();"><span>W3C CSS Validator</span></a></li>
         </ul>
       </nav>
-    </div>
+    </section>
 
-    <div id="container">
+    <main id="container">
       <h1>About</h1>
-      <div id="header">
+      <header>
         <section id="factsection">
           <h6>Quick facts:</h6>
           <p>Birthday: April 1998</p>
-          <p>Gender: Male</p>
+          <p>Gender: Unknown</p>
           <p>Programming in Java experience: 3 years</p>
           <p>Android Studio experience: 1 year</p>
           <p>Eclipse experience: 1 year</p>
           <p>Programming in C++ experience: 1 year</p>
           <p>Programming in Python experience: 0.5 years</p>
-          <p>Piano experience: 13 years</p>
-          <p>Basketball experience: 7 years</p>
-          <p>Parkour experience: 2 years</p>
         </section>
 
         <picture>
-          <source media="(max-width: 870px)" srcset="img/onstage1.jpg">
-          <img src="img/onstage.jpg" alt="Photo of me on the stage">
+          <source media="(max-width: 870px)" srcset="img/richard.png">
+          <img src="img/pundog.jpg" alt="A pun photo.">
         </picture>
-      </div>
+      </header>
+
+      <section id="picturesection">
+        <h5>This is a responsive picture of nice scenery:</h5>
+        <picture>
+          <source media="(max-width: 870px)" srcset="img/smallmountain.jpg">
+          <img src="img/mountain.jpg" alt="A photo of mountains.">
+        </picture>
+
+        <h5>This is a responsive picture of Felidae:</h5>
+        <picture>
+          <source media="(max-width: 870px)" srcset="img/cat.jpg">
+          <img src="img/leopard.jpg" alt="A photo of a Felidae.">
+        </picture>
+      </section>
 
       <section id="videosection">
-        <h5>This video contains some random parkour:</h5>
-        <video poster="img/pundog.jpg" controls>
-          <source src="video/flips.mp4" type="video/mp4">
-          We are sorry, but your browser does not support the video element.
+        <h5>This video contains some random band:</h5>
+        <video poster="img/funky.png" controls>
+          <source src="video/saxik.mp4" type="video/mp4">
+          We are sorry, your browser does not support the video element, but you can <a href="video/funky.mp4">download the video</a> and watch it with your built in video player!
         </video>
 
-        <h5>In case the video above does not work:</h5>
-
-        <h5>This video contains three cows eating grass:</h5>
-        <video poster="img/zalesie.jpg" controls>
+        <h5>This video contains some cows eating grass:</h5>
+        <video poster="img/cow.jpg" controls>
           <source src="video/grass.mp4" type="video/mp4">
           <source src="video/grass.ogv" type="video/ogg">
-          We are sorry, but your browser does not support the video element.
+          <source src="video/grass.webm" type="video/webm">
+          We are sorry, your browser does not support the video element, but you can <a href="video/grass.mp4">download the video</a> and watch it with your built in video player!
         </video>
-
-        <h5>This is a video of my funky band:</h5>
-
       </section>
-    </div>
+    </main>
   </body>
 </html>

@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <title>Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/litreview.css">
     <link rel="stylesheet" href="css/sidebar.css">
   </head>
   <body>
     <script src="js/sidebar.js"></script>
 
-    <div id="sidebar">
+    <div id="sidebar" class="active">
       <div class="icon" onclick="toggleNavbar()">
         <div class="hamburger">
         </div>
@@ -41,125 +41,207 @@
 
       <h1>Discovery Log</h1>
 
-      <h5>Mitigating corporate information exposure on the web</h5>
+      <ul id="discoverylog">
+          <li id="week1"><strong>Week 1</strong>
+            <p>
+              We were introduced to the course. We were introduced to the time management skills too so that we would be able to pass this course.
+              We were also introduced to Turnitin, which we can use to check our future coursework.
+              The time management problem is a very important thing to consider as I am attending a university.
+              There have been no deadlines released yet, but I think that checking out the various time management techniques
+              might come in handy. That is why I visited all the sites provided by our lecturer, where I could see many
+              solutions to such problem.
+            </p>
+          </li>
+          <li class="anchor" id="week2"><strong>Week 2</strong>
+              <p>
+                Virtual machine started properly, after being started in INDADD
+                Interacted with various text editors, such as Notepad++, Atom, Brackets, etc.
+                Also completed the website awards.
+                Sometimes even when you don't understand the purpose of the task it can still be important.
+                A few weeks later, in week 12, i finally understood that by looking at supposedly "good" and "bad" websites, we can better understand how to design our own websites.
+                Unfortunately, you need to look at multiple examples of websites to properly grasp the ideas of "good" web design.
+                The websites that you would look at may use bad or invalid HTML and will typically use HTML which you haven't been introduced to.
+                This can be used as a way to extend how much of HTML you understand since you can look up the specific idea and use this to further your undersanding.
+              </p>
+            </li>
+          <li class="anchor" id="week3"><strong>Week 3</strong>
+              <p>
+                Learnt that a large amount of data is stored about everyone by various companies.
+                This includes such things as what I typically buy, my age, interests, etc.
+                As well as this, The distinction between sensitive and secret information was explored.
+                This isn't as bad as it sounds since for most companies at least it is used to improve and tailor the experience for you.
+                It will give you deals that based on other purchases it thinks youd be interested in or recommend something, as well as various other things.
+                However, after doing the literature review, week 8, it was made clear that the companies intentions aren't the only ones you need to consider.
+                The security of the data is paramount since if your data is leaked to a malicious third party, then they could potentially do a large amount of damage using this seemingly trivial data.
+              </p>
+            </li>
+          <li class="anchor" id="week4"><strong>Week 4</strong>
+            <p>
+              The Literature review was discussed and the fine points explained.
+              Google's advanced search was useful for finding proper academic articles.
+              You cannot begin to research in a topic area without first properly finding and reviewing the current state of the area of research.
+            </p>
+          </li>
+          <li class="anchor" id="week5"><strong>Week 5</strong>
+            <p>
+              The proper was to write a literature review was introduced.
+              The voice must be passive and cautious and must not go to deep into a single source, nor should it only skim upon various details of the topic.
+              Phrasing is vitally important in a literature review, due to the fact that it might not convey the proper meaning that the author had intended.
+              This could lead to a misunderstanding of those who are reading the review and may cause wrong ideas about the topic area to arise from this.
+              The author must not have his opinion anywhere in the text, this is because an opinion inherently contains bias, and a literature review is simply to provide a document about a particular subject.
+            </p>
+          </li>
+          <li class="anchor" id="week6"><strong>Week 6</strong>
+            <p>
+              This week, HTML was introduced.
+              The basics of the language were covered, including how to properly set up a file to begin adding content.
+              The way in which you navigate from page to page was also included, which would be by using an "a" tag.
+              The few special characters were introduced, there were &lt;, &amp; and &gt;.
+              The first page I created in this only consisted of some unformatted text.
+            </p>
+          <picture>
+            <source srcset="pictures/Website1.PNG">
+            <img src="pictures/oldbrowser.png" alt="This image contains text advising you that your browser is too old." >
+          </picture>
+          <p>
+            The second page would involve a moving gif as well as a hyperlink to google, however there was still no formatting present
+          </p>
+          <picture>
+            <source srcset="pictures/Website2.PNG">
+            <img src="pictuers/oldbrowser.png" alt="This image contains text advising you that your browser is too old." >
+          </picture>
+          </li>
+          <li class="anchor" id="week7"><strong>Week 7</strong>
+            <p>
+              The first draft of the literature review was due in.
+              I learnt that it would be peer reviewed and so i would be required to mark 5 of my peer's work.
+              This meant that i would have to know the marking criteria in order to give fair responses as well as hope that those marking mine were better than i was, so i could get the best feedback possible.
+            </p>
+          </li>
+          <li class="anchor" id="week8"><strong>Week 8</strong>
+            <p>
+              This week focussed on separating form and content from my HTML files.
+              This would be done by employing a Cascading Style Sheet (CSS).
+              This would allow me to set various parameters whereby i could change the formatting, positioning, etc. of a specific piece of content on the page.
+              This was coupled with the idea that it is bad practice to have form and content, i.e. HTML and css in a single HTML document.
+              This is because it is much harder to maintain and add or remove content from a page if the styling is adding to the size and getting in the way.
+              As well as this, having a separate CSS file will prevent procedural website generation, since that could look different on various devices.
+              I was also introduced to the "link" tag which would allow me to link a HTML page to a CSS sheet in order for me to use the various form changing pieces written in the Style Sheet.
+            </p>
+            <p>
+            Link Tag Example:
+            </p>
+            <picture>
+              <source srcset="pictures/LinkTag.PNG">
+              <img src="pictures/oldbrowser.png" alt="Image advising that your browser is old">
+            </picture>
+            <p>
+              Various things such as text colour and text background colour was also introduced, allowing for a custom preset for each piece of text entered.
+              The difference between class selectors and id selectors was also explained.
+            </p>
+            <p>
+              CLass Example:
+            </p>
+            <picture>
+              <source srcset="pictures/ClassExample.PNG">
+              <img src="pictures/oldbrowser.png" alt="Image advising that your browser is old">
+            </picture>
+            <p>
+              ID Example:
+            </p>
+              <picture>
+                <source srcset="pictures/IDExample.PNG">
+                <img src="pictures/oldbrowser.png" alt="Image advising that your browser is old">
+              </picture>
+            <p>
+              The difference is that Class selectors are used to style multiple entities on the screen whereas id's, since they must be unique, are only used to style a single entity.
+            </p>
+          </li>
+          <li class="anchor" id="week9"><strong>Week 9</strong>
+            <p>
+              This week was primarily focussed on efficiency.
+              The way in which you can style an editor to your liking was explained, using Atom as a primary example.
+              Various plugins were suggested, one of which allowed a preview page for the HTML file, this would be useful to see how it looks before uploading it.
+              Snippets for the text editors were briefly introduced, however as of yet it is not a neccesity.
+              A way in which you can work more efficiently is such things as using keyboard shortcuts or using Ctrl+Click to have multiple cursors on the screen to edit multiple elements at once.
+            </p>
+          </li>
+          <li class="anchor" id="week10"><strong>Week 10</strong>
+            <p>
+              This week, we were taught about design. The idea of properly designing the website, even for users that i do not expect is very important.
+              Designing for the future is also important because in the future it may be easier to simply continue to use my design, rather than go through and completly redesign the website.
+              Creating a responsive and overall intuitive design is difficult becuase you need to think about every user that will use your site.
+              This is important because and older person wouldn't interpret elements on the screen the same way a younger person would.
+            </p>
+          </li>
+          <li class="anchor" id="week11"><strong>Week 11</strong>
+            <p>
+              This week the proper syntax for including pictures in an HTML setting was introduced.
+              The "img" tag is a backup tag incase the browser that the user is using absolutely cannot use any other kind of format.
+              The preferred tag would be the "picture" tag.
+            </p>
+            <p>
+              Example Picture Tag:
+            </p>
+              <picture>
+                <source srcset="pictures/PicExample.PNG">
+                <img src="pictures/oldbrowser.png" alt="Image advising that your browser is old">
+              </picture>
+            <p>
+              This would allow the user to set different pictures to be displayed under different parameters, such as the size of the window of the browser.
+              It can also set up various backup pictures in case the browser is unable to properly load and display the picture.
+              The picture tag can also incorporate the img tag as a last resort backup.
+              This helps make the website more dynamic since users will use devices with varying screen sizes and resolutions.
+              Thus it is imperative to properly cater to, at the very least, the vast majority in order to allow any user to browse the site with relative ease.
+            </p>
+          </li>
+          <li class="anchor" id="week12"><strong>Week 12</strong>
+            <p>
+              Feedback was given on my website before the christmas holidays became underway.
+              The primary ideas given were that my website was not dynamic from different sizes as well as the text, header and navigation regions not being properly defined.
+              The way to rectify this was by initially using the @media tag in css in order to allow for different formatting at different sizes.
+              This prevents the formatting from colliding with other elements at different resolutions, devices, etc.
+              The other method introduced was the flexbox as well as the grid elements.
+            </p>
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Page demonstrating how to properly use flexbox mechanics</a>
+            <p>
+              These can be used to properly set up the dimentions and formatting of a page, giving a navigation panel the proper area it needs.
+              This would also allow the main body of text to flex and flow around the changing dimentions of the webpage navigation bar as well as the page's navigation panel.
+              A page for "Flex testing" was creating in order to allow me to practice and properly understand how to use both elements without breaking or simply making a mess of the rest of my site.
+            </p>
+          </li>
+          <li class="anchor" id="week13"><strong>Week 13</strong>
+            <p>
+              In Week 13 the Website Peer Review Marking Scheme was released so that we would know what we need to incorporate or avoid on our websites.
+              This mentioned things such as anonymity being key and properly using CSS selectors and HTML tags for the page
+              We also had to provide a link to the HTML validation page which would not only take the user there, but also automatically provide the URL of our websites on the web server.
+              This turned out to be a simple fix, as to accomodate this you simply need to add "/check?uri=referer" after the forward slash.
+            </p>
+          </li>
+          <li class="anchor" id="week14"><strong>Week 14</strong>
+            <p>
+              Addressing on the web was talked about.
+              I began to use small amounts of javascript, trying to understand how it works and how it could improve my page.
+              The way of programming was complicated, though i could see how it could be used for highly reponsive design.
+              This would be examples of how far you had scrolled, or whether you had clicked on something.
+              This could be used with listeners to change variables to further tailor the user's experience based on where they were looking on the page, more so than that of :hover, :active, etc.
 
-      <h6>Introduction</h6>
-      <p>In today’s technological world, provided that a company wishes to expand and evolve into a
-      world-wide international company, it is necessary to develop a software for both customers
-      and employees, while storing all the data electronically. The efficiency of such improvement
-      is directly proportional to the company’s future revenues and further development. However,
-      the risk of the corporate information exposure has to be considered. The threats may come
-      from the inside of the company or from the outside. In order to avoid the risk, there are
-      various strategies for mitigating the unwanted exposure of the corporate information on the
-      web.</p>
+            </p>
+          </li>
+          <li class="anchor" id="week15"><strong>Week 15</strong>
+            <p>
+              Accessability was talked about and the importance of accomodating people with disabilities was stressed.
 
-      <h6>Risk of data leakage</h6>
-      <p>“You can't defend. You can't prevent. The only thing you can do is detect and respond. ” -
-      Bruce Schneier. According to P. Gordon, data leakage is the unauthorized transmission of
-      information from within an organisation to an external destination or recipient (Gordon, 2007,
-      p. 6). Such undesired information exposure is present all around the world and it usually
-      costs companies vast amount of money and bad reputation. Thus, organisations seek for
-      various mitigating methods, minimizing the risk of data leakage. Companies have to
-      distinguish between the internal threats (staff within the organisation) and the external
-      threats (hackers from outside the organisation) and then take appropriate actions to
-      minimize the threat.</p>
+            </p>
+          </li>
+          <li class="anchor" id="week16"><strong>Week 16</strong>
+            <p>
+              <img class="svgimage" src="svg/diamondboxes.svg" alt="" />
+              Today i leant how to make random pieces of colour and excitement on my page in the form of svg images.
+            </p>
+          </li>
+        </ul>
 
-      <h6>Internal threats</h6>
-      <p>“Research in the area of information security has shown that the employees of an
-      organisation are considered among the biggest threat to the information security of any
-      organisation” ( Jabbour & Menasce, 2009, p. 2 ). For some it might be surprising, but the labour
-      force within the company is the major aspect of data leakage. According to a US-CERT and
-      US Secret Service survey published in 2006, the financial losses due to the insider attacks
-      were much higher than those caused by outside attacks. Even the time it takes to detect the
-      insider attacks is so high that it is usually detected after the onset ( Jabbour & Menasce, 2009,
-      p. 2 ). Since most of the internal threats are unintentional, majority of anti-leakage measures
-      focus on improving the security of the software and increasing the awareness about the risks
-      of data leakage. However, there is still a potential risk of intentional threat, when an
-      employee could have various motivations to leak data or sabotage it.</p>
-
-      <p>One of the ways, which help mitigate the corporate information exposure is to increase the
-      awareness of employees about the importance of information security. Various
-      team-buildings and presentations should be considered, which would help them understand
-      the risks of information exposure. The staff should know what they can publish outside the
-      company and what they cannot. Their understanding is the key concept in further internal
-      risk-mitigating measures.</p>
-
-      <p>Another important measure against exposure risk is user training. Once the staff is aware of
-      all the vulnerabilities within their working space, user training is an essential part of
-      increasing the information security. As soon as the employees have a full understanding of
-      the integrated software and organisation within the company, the chance of any accidental
-      damage or release of corporate data is diminished.</p>
-
-      <p>Keeping the highest possible amount of comfort among the employees could be a way of
-      preventing intentional leakage of data. Since the motivation for such sabotage may vary, the
-      organisation must be aware of this in order to take actions which will aid in avoiding any type
-      of sabotage. Reasons for this include corporate espionage, financial reward, or a grievance
-      with their employer. (Gordon, 2007, p. 7)</p>
-
-      <h6>External threats</h6>
-      <p>Even when keeping the unwanted exposure from the inside of the company is under control,
-      there are plenty of external threats. With the increasing popularity and revenues of the
-      company increases the interest in the corporate information by various people or
-      organisations. Breach attempts are happening world-wide in every second, making the
-      system security the most crucial aspect of avoiding any data exposure.</p>
-
-      <p>“Phishing” is one of the biggest external threats to an organisation, or even individuals. It is
-      the act of using various communication devices such as e-mail and telephones in an attempt
-      to trick individuals into either revealing their personal information, including passwords and
-      social security numbers, or installing malicious software (Cooper, 2016). When a member of
-      the staff within a company responds to such communication, the whole organisation is in
-      great danger. According to Bruce Schneier, the organisations should not blame the users for
-      being victims of phishing, they should rather focus on developing security measures not
-      involving the users’ awareness of these risks (Schneier, 2016).</p>
-
-      <p>Monitoring the network activity within the organisation is one of the possible approaches
-      against external threats. According to a research , 13.2% of participated students and staff
-      within a university located in the Midwestern United States fell for the simulated phishing
-      attack. They provided their user IDs along with their passwords to a fictitious website
-      (Jensen, Dinger, Wright, Thatcher, 2017, p. 612). By monitoring the network activity, it can
-      be avoided, for example by using blacklists and filtering as proposed by Florencio & Herley.
-      They designed a scheme of phishing prevention, in which the browser should detect when a
-      user has typed protected credentials into a non-whitelisted site and report such action to the
-      server. If the server detects an attack, it adds the phishing domain to the blacklist, preventing
-      the further continuation or repetition of the attack. (Florencio & Herley, 2007, p. 29)</p>
-
-      <p>A common system security measure is the password policy. It ensures that the users will
-      have to set up more complex passwords, causing better security against hackers trying to
-      reach the corporate information through the user account. It also includes the ability to lock
-      the account after several failed attempts (National Cyber Security Centre, 2015). The
-      passwords are then more difficult to guess and it takes more time for the hackers to get into
-      the account, increasing the time for detecting that there has been an attempt of breach. It
-      might even stop the breach itself.</p>
-
-      <h6>Conclusion</h6>
-      <p>As the technology evolves, the cybercriminals are harder to detect and stop. Keeping up with
-      the new technology that the hackers have access to nowadays is important for any modern
-      organisation. Many researchers have shown that despite external threats, creating various
-      policies and taking actions against internal threat can be a crucial aspect when mitigating the
-      corporate information exposure on the web.</p>
-
-      <h6>References</h6>
-      <p>Cooper, P. G. (2016). Phishing. <i>Salem Press Encyclopedia.</i></p>
-
-      <p>Florencio, D., & Herley, C. (2007). Evaluating a Trial Deployment of Password Re-Use for
-      Phishing Prevention. <i>Microsoft Research, One Microsoft Way</i> (p. 29).</p>
-
-      <p>Gordon, P. (2007). Data leakage - Threats and Mitigation. <i>SANS Institute InfoSec Reading
-      Room</i> (p. 6-7).</p>
-
-      <p>Jabbour, G., & Menasce, D. A. (2009). Stopping the Insider Threat: the case for
-      implementing integrated autonomic defense mechanisms in computing systems. <i>George
-      Mason University</i> (p. 2).</p>
-
-      <p>Jensen, M.L., Dinger, M., Wright, R. T., Thatcher, J. B. (2017). Training to Mitigate Phishing
-      Attacks Using Mindfulness Techniques. <i>Journal of Management Information Systems</i> (p.
-      612).</p>
-
-      <p>National Cyber Security Centre (2015). Reducing your exposure to cyber attack. Retrieved
-      from <a href="https://www.ncsc.gov.uk/articles/reducing-your-exposure-cyber-attack">https://www.ncsc.gov.uk/articles/reducing-your-exposure-cyber-attack</a></p>
-
-      <p>Schneier, B. (2016). Stop Trying to Fix the User. Retrieved from
-      <a href="https://www.schneier.com/essays/archives/2016/09/stop_trying_to_fix_t.html">https://www.schneier.com/essays/archives/2016/09/stop_trying_to_fix_t.html</a></p>
 
     </div>
   </body>

@@ -43,6 +43,10 @@ img:hover {
   color: white;
 }
 
+figure {
+  margin: 0;
+}
+
 a.logo {
   display: block;
   width: 100%;
