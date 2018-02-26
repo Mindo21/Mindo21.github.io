@@ -1,4 +1,4 @@
-function calculateAge(){
+window.onload = function calculateAge(){
   var today = new Date();
   var birthday = new Date(1998, 4-1, 9);
   var difference = Math.abs(today.valueOf() - birthday.valueOf());
@@ -23,4 +23,8 @@ function calculateAge(){
   } else {
     document.getElementById('age').innerHTML = "I am currently " + ageInYears + " years old, but will be " + (ageInYears+1) + " in only " + (365 - ageInDays%365) + " days.";
   }
-}
+
+  var x = window.matchMedia("(max-width: 600px)");
+  changeActive(x);
+  x.addListener(changeActive);
+};

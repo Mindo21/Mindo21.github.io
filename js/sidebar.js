@@ -1,5 +1,3 @@
-
-
 window.onload = function start(){
   var x = window.matchMedia("(max-width: 600px)");
   changeActive(x);
