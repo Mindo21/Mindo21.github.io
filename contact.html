@@ -1,34 +1,65 @@
 <!DOCTYPE html>
-<head>
-  <title>Minarovic Portfolio</title>
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/sidebar.css">
-</head>
-<body>
-  <script src="js/sidebar.js"></script>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script src="js/sidebar.js"></script>
 
-  <div id="sidebar" class="active">
-    <div class="icon" onclick="toggleNavbar()">
-      <div class="hamburger">
+    <div id="sidebar" class="active">
+      <div class="icon" onclick="toggleNavbar()">
+        <div class="hamburger">
+        </div>
       </div>
+
+      <nav class="navigation">
+        <a href="http://www.port.ac.uk/" target="_blank" class="logo">
+          <picture>
+            <source media="(max-height: 600px)" srcset="img/unilogo.png">
+            <source media="(max-width: 600px)" srcset="img/unilogo.png">
+            <img src="img/miniLogo.png" alt="University Logo">
+          </picture>
+        </a>
+        <ul>
+          <li><a href="index.html"><span>Home</span></a></li>
+          <li><a href="about.html"><span>About</span></a></li>
+          <li class="selected"><a><span>Contact</span></a></li>
+          <li><a href="litreview.html"><span>Literature Review</span></a></li>
+          <li><a href="discovery.html"><span>Discovery Log</span></a></li>
+          <li><a href="http://www.port.ac.uk/" target="_blank" onclick="loseFocus();"><span>University of Portsmouth</span></a></li>
+        </ul>
+
+        <ul class="validatorlinks">
+          <li><a href="https://validator.w3.org/check?uri=referer" target="_blank" onclick="loseFocus();"><span>W3C Markup Validator</span></a></li>
+          <li><a href="https://jigsaw.w3.org/css-validator/check?uri=referer&" target="_blank" onclick="loseFocus();"><span>W3C CSS Validator</span></a></li>
+        </ul>
+      </nav>
     </div>
 
-    <nav class="navigation">
-      <a href="http://www.port.ac.uk/" target="_blank" class="logo"><img src="img/unilogo.png" alt="University Logo"></a>
-      <ul>
-        <li><a href="index.html"><span>Home</span></a></li>
-        <li><a href="about.html"><span>About</span></a></li>
-        <li class="selected"><a><span>Contact</span></a></li>
-        <li><a href="litreview.html"><span>Literature Review</span></a></li>
-        <li><a href="discovery.html"><span>Discovery Log</span></a></li>
-        <li><a href="http://www.port.ac.uk/" target="_blank"><span>University of Portsmouth</span></a></li>
-      </ul>
-    </nav>
-  </div>
+    <div id="container">
+      <h1>Contact</h1>
+      <div id="socialsection">
+        <h6>👥 Social 👥</h6>
+        <p><span class="leftcontact"><b>Email address:</b></span> <a href="mailto:matusm44@gmail.com"><span class="rightcontact">matusm44@gmail.com</span></a></p>
+        <p><span class="leftcontact"><b>Phone number:</b></span> <span class="rightcontact">+447454468411</span></p>
+        <p><span class="leftcontact"><b>Instagram:</b></span> <a href="https://www.instagram.com/mindospindos/"><span class="rightcontact">mindospindos21</span></a></p>
+        <p><span class="leftcontact"><b>YouTube:</b></span> <a href="https://www.youtube.com/channel/UCoNChy7YKiHtVvuJXMAFEjA?view_as=subscriber"><span class="rightcontact">My Channel</span></a></p>
+        <p><span class="leftcontact"><b>SoundCloud:</b></span> <a href="https://soundcloud.com/mindo-minarovic"><span class="rightcontact">Mindo</span></a></p>
+      </div>
+      <div id="officialsection">
+        <h6>🏢 Official 🏢</h6>
+        <p><span class="leftcontact"><b>Email address:</b></span> <a href="mailto:up879244@myport.ac.uk"><span class="rightcontact">up879244@myport.ac.uk</span></a></p>
+        <p><span class="leftcontact"><b>Address:</b></span> <span class="rightcontact">Stansted Rd, Southsea</span></p>
+        <p><span class="leftcontact"><b>Postcode:</b></span> <span class="rightcontact">PO5 1RZ</span></p>
+      </div>
+      <div id="ratioiframe">
+        <iframe src="https://www.youtube.com/embed/Yp8HQ3agWk0?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <iframe class="soundcloud" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/349248557&amp;color=%23ccc0a4&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
+    </div>
 
-  <div id="content">
-    <h1>Home</h1>
-    <p>Hi</p>
-  </div>
-
-</body>
+  </body>
+</html>

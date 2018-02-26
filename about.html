@@ -1,34 +1,86 @@
 <!DOCTYPE html>
-<head>
-  <title>Minarovic Portfolio</title>
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/sidebar.css">
-</head>
-<body>
-  <script src="js/sidebar.js"></script>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <meta charset="utf-8">
+    <script src="js/sidebar.js"></script>
+    <script async defer src="http://www.instagram.com/embed.js"></script>
+  </head>
+  <body>
 
-  <div id="sidebar" class="active">
-    <div class="icon" onclick="toggleNavbar()">
-      <div class="hamburger">
+    <div id="sidebar" class="active">
+      <div class="icon" onclick="toggleNavbar()">
+        <div class="hamburger">
+        </div>
       </div>
+
+      <nav class="navigation">
+        <a href="http://www.port.ac.uk/" target="_blank" class="logo">
+          <picture>
+            <source media="(max-height: 600px)" srcset="img/unilogo.png">
+            <source media="(max-width: 600px)" srcset="img/unilogo.png">
+            <img src="img/miniLogo.png" alt="University Logo">
+          </picture>
+        </a>
+        <ul>
+          <li><a href="index.html"><span>Home</span></a></li>
+          <li class="selected"><a><span>About</span></a></li>
+          <li><a href="litreview.html"><span>Literature Review</span></a></li>
+          <li><a href="discovery.html"><span>Discovery Log</span></a></li>
+          <li><a href="http://www.port.ac.uk/" target="_blank" onclick="loseFocus();"><span>University of Portsmouth</span></a></li>
+        </ul>
+
+        <ul class="validatorlinks">
+          <li><a href="https://validator.w3.org/check?uri=referer" target="_blank" onclick="loseFocus();"><span>W3C Markup Validator</span></a></li>
+          <li><a href="https://jigsaw.w3.org/css-validator/check?uri=referer&" target="_blank" onclick="loseFocus();"><span>W3C CSS Validator</span></a></li>
+        </ul>
+      </nav>
     </div>
 
-    <nav class="navigation">
-      <a href="http://www.port.ac.uk/" target="_blank" class="logo"><img src="img/unilogo.png" alt="University Logo"></a>
-      <ul>
-        <li><a href="index.html"><span>Home</span></a></li>
-        <li class="selected"><a><span>About</span></a></li>
-        <li><a href="contact.html"><span>Contact</span></a></li>
-        <li><a href="litreview.html"><span>Literature Review</span></a></li>
-        <li><a href="discovery.html"><span>Discovery Log</span></a></li>
-        <li><a href="http://www.port.ac.uk/" target="_blank"><span>University of Portsmouth</span></a></li>
-      </ul>
-    </nav>
-  </div>
+    <div id="container">
+      <h1>About</h1>
+      <div id="header">
+        <section id="factsection">
+          <h6>Quick facts:</h6>
+          <p>Birthday: April 1998</p>
+          <p>Gender: Male</p>
+          <p>Programming in Java experience: 3 years</p>
+          <p>Android Studio experience: 1 year</p>
+          <p>Eclipse experience: 1 year</p>
+          <p>Programming in C++ experience: 1 year</p>
+          <p>Programming in Python experience: 0.5 years</p>
+          <p>Piano experience: 13 years</p>
+          <p>Basketball experience: 7 years</p>
+          <p>Parkour experience: 2 years</p>
+        </section>
 
-  <div id="content">
-    <h1>About</h1>
-    <p>Hi</p>
-  </div>
+        <picture>
+          <source media="(max-width: 870px)" srcset="img/onstage1.jpg">
+          <img src="img/onstage.jpg" alt="Photo of me on the stage">
+        </picture>
+      </div>
 
-</body>
+      <section id="videosection">
+        <h5>This video contains some random parkour:</h5>
+        <video poster="img/pundog.jpg" controls>
+          <source src="video/flips.mp4" type="video/mp4">
+          We are sorry, but your browser does not support the video element.
+        </video>
+
+        <h5>In case the video above does not work:</h5>
+
+        <h5>This video contains three cows eating grass:</h5>
+        <video poster="img/zalesie.jpg" controls>
+          <source src="video/grass.mp4" type="video/mp4">
+          <source src="video/grass.ogv" type="video/ogg">
+          We are sorry, but your browser does not support the video element.
+        </video>
+
+        <h5>This is a video of my funky band:</h5>
+
+      </section>
+    </div>
+  </body>
+</html>

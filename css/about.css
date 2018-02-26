@@ -1,0 +1,118 @@
+#container {
+  height: 100%;
+  min-height: 100%;
+  /*text-align: center;*/
+}
+
+#container h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+}
+
+#container h5 {
+  font-size: 1.2em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+#container p {
+  text-align: center;
+}
+
+#videosection video {
+  position: relative;
+}
+
+#ratioiframe {
+  position: relative;
+  padding-top: 56%;
+}
+
+#ratioiframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+#videosection video, #videosection iframe {
+  border: solid #712A70 5px;
+  border-radius: 8px;
+  display: block;
+  transition: 0.3s;
+  margin: 10px 0;
+  width: 100%;
+}
+
+#videosection {
+  display: block;
+}
+
+#header {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+#factsection {
+  display: inline-block;
+  vertical-align: top;
+  /*float: left;*/
+  top: 0;
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  height: 260px;
+  border: solid #712A70 5px;
+  border-radius: 8px;
+}
+
+#factsection h6 {
+  font-size: 1.5em;
+  margin: 0 0 10px 0;
+}
+
+#factsection p {
+  margin: 0;
+  text-align: left;
+}
+
+#header picture {
+  height: 280px;
+  display: inline-block;
+  vertical-align: top;
+  /*top: 50%;*/
+  /*transform: translateY(-50%);*/
+  margin: 10px;
+  /*float: right;*/
+}
+
+#header picture img {
+  width: auto;
+  height: 100%;
+  border: solid #712A70 5px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 870px) {
+
+  #header picture {
+    height: auto;
+    width: 100%;
+    float: none;
+  }
+
+  #header picture img {
+    height: auto;
+    width: 100%;
+  }
+
+  #factsection {
+    width: auto;
+    float: none;
+    height: auto;
+  }
+
+}

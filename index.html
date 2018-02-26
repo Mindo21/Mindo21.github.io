@@ -1,35 +1,50 @@
 <!DOCTYPE html>
-<head>
-  <title>Minarovic Portfolio</title>
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/sidebar.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-  <script src="js/sidebar.js"></script>
-
-  <div id="sidebar" class="active">
-    <div class="icon" onclick="toggleNavbar()">
-      <div class="hamburger">
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/sidebar.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body onload="calculateAge();">
+    <div id="sidebar" class="active">
+      <div class="icon" onclick="toggleNavbar()">
+        <div class="hamburger">
+        </div>
       </div>
+
+      <nav class="navigation">
+        <a href="http://www.port.ac.uk/" target="_blank" class="logo">
+          <picture>
+            <source media="(max-height: 720px)" srcset="img/unilogo.png">
+            <source media="(max-width: 600px)" srcset="img/unilogo.png">
+            <img src="img/miniLogo.png" alt="University Logo">
+          </picture>
+        </a>
+
+        <ul>
+          <li class="selected"><a><span>Home</span></a></li>
+          <li><a href="about.html"><span>About</span></a></li>
+          <li><a href="litreview.html"><span>Literature Review</span></a></li>
+          <li><a href="discovery.html"><span>Discovery Log</span></a></li>
+          <li><a href="http://www.port.ac.uk/" target="_blank" onclick="loseFocus();"><span>University of Portsmouth</span></a></li>
+        </ul>
+
+        <ul class="validatorlinks">
+          <li><a href="https://validator.w3.org/check?uri=referer" target="_blank" onclick="loseFocus();"><span>W3C Markup Validator</span></a></li>
+          <li><a href="https://jigsaw.w3.org/css-validator/check?uri=referer&" target="_blank" onclick="loseFocus();"><span>W3C CSS Validator</span></a></li>
+        </ul>
+
+      </nav>
     </div>
 
-    <nav class="navigation">
-      <a href="http://www.port.ac.uk/" target="_blank" class="logo"><img src="img/unilogo.png" alt="University Logo"></a>
-      <ul>
-        <li class="selected"><a><span>Home</span></a></li>
-        <li><a href="about.html"><span>About</span></a></li>
-        <li><a href="contact.html"><span>Contact</span></a></li>
-        <li><a href="litreview.html"><span>Literature Review</span></a></li>
-        <li><a href="discovery.html"><span>Discovery Log</span></a></li>
-        <li><a href="http://www.port.ac.uk/" target="_blank"><span>University of Portsmouth</span></a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div id="content">
-    <h1>Home</h1>
-    <p>Hi</p>
-  </div>
-
-</body>
+    <div id="container">
+      <h1>Home</h1>
+      <p>Welcome to the page of future software developer, composer and piano player: UP879244.</p>
+      <p><span id="age"></span></p>
+      <p>If you would like to know more about me, click <a href="about.html">here</a>.</p>
+    </div>
+  </body>
+</html>
