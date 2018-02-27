@@ -104,9 +104,9 @@ a.logo picture img {
 
 #sidebar .navigation ul li {
   text-align: center;
-  margin: 0px 0px;
-  width: calc(100% - 6px);
-  border-left: 6px solid rgba(0, 0, 0, 0);
+  margin: 0;
+  width: 100%;
+  /*border-left: 6px solid rgba(0, 0, 0, 0);*/
   transition: 0.3s;
 }
 
@@ -153,6 +153,7 @@ ul.validatorlinks {
   animation: borderAnimation ease-in 0.5s;
   animation-fill-mode: forwards;
   border-left: 6px solid #009FE3;
+  width: calc(100% - 6px);
   display: flex;
 }
 
