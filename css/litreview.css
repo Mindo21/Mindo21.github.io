@@ -9,7 +9,7 @@
 }
 
 #voiceSection {
-  width: 100%;
+  width: calc(100% - 10px);
   overflow: hidden;
   text-align: center;
   border: solid #712A70 5px;

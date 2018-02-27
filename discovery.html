@@ -3,17 +3,18 @@
   <head>
     <title>Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/litreview.css">
+    <link rel="stylesheet" href="css/discovery.css">
     <link rel="stylesheet" href="css/sidebar.css">
+    <script src="js/sidebar.js"></script>
+    <script src="js/discovery.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
   </head>
   <body>
-    <script src="js/sidebar.js"></script>
-
-    <div id="sidebar" class="active">
-      <div class="icon" onclick="toggleNavbar()">
-        <div class="hamburger">
-        </div>
-      </div>
+    <section id="sidebar" class="active">
+      <figure class="icon" onclick="toggleNavbar()">
+        <figure class="hamburger">
+        </figure>
+      </figure>
       <nav class="navigation">
         <a href="http://www.port.ac.uk/" target="_blank" class="logo">
           <picture>
@@ -35,214 +36,205 @@
           <li><a href="https://jigsaw.w3.org/css-validator/check?uri=referer&" target="_blank" onclick="loseFocus();"><span>W3C CSS Validator</span></a></li>
         </ul>
       </nav>
-    </div>
+    </section>
 
-    <div id="container">
+    <main id="container">
 
       <h1>Discovery Log</h1>
 
-      <ul id="discoverylog">
-          <li id="week1"><strong>Week 1</strong>
-            <p>
-              We were introduced to the course. We were introduced to the time management skills too so that we would be able to pass this course.
-              We were also introduced to Turnitin, which we can use to check our future coursework.
-              The time management problem is a very important thing to consider as I am attending a university.
-              There have been no deadlines released yet, but I think that checking out the various time management techniques
-              might come in handy. That is why I visited all the sites provided by our lecturer, where I could see many
-              solutions to such problem.
-            </p>
-          </li>
-          <li class="anchor" id="week2"><strong>Week 2</strong>
+      <nav id="weeksidebar">
+          <ul>
+            <li><a id="W1" name="Week 1" href="#week1"></a></li>
+            <li><a id="W2" name="Week 2" href="#week2"></a></li>
+            <li><a id="W3" name="Week 3" href="#week3"></a></li>
+            <li><a id="W4" name="Week 4" href="#week4"></a></li>
+            <li><a id="W5" name="Week 5" href="#week5"></a></li>
+            <li><a id="W6" name="Week 6" href="#week6"></a></li>
+            <li><a id="W7" name="Week 7" href="#week7"></a></li>
+            <li><a id="W8" name="Week 8" href="#week8"></a></li>
+            <li><a id="W9" name="Week 9" href="#week9"></a></li>
+            <li><a id="W10" name="Week 10" href="#week10"></a></li>
+            <li><a id="W11" name="Week 11" href="#week11"></a></li>
+            <li><a id="W12" name="Week 12" href="#week12"></a></li>
+            <li><a id="W13" name="Week 13" href="#week13"></a></li>
+            <li><a id="W14" name="Week 14" href="#week14"></a></li>
+            <li><a id="W15" name="Week 15" href="#week15"></a></li>
+            <li><a id="W16" name="Week 16" href="#week16"></a></li>
+          </ul>
+      </nav>
+
+      <article>
+        <header id="voiceSection">
+          <p class="voiceInstructions"><b>Responsive Voice: If you want to listen to the text instead of reading it, click the </b><em>PLAY</em><b> button below.</b></p>
+          <p class="voiceInstructions"><b>Click the buttons right next to headings in order to listen to the separate sections.</b></p>
+          <input class="voiceButton" onclick="read('container');" type="button" value="PLAY"/>
+          <input class="voiceButton" onclick="pauseSpeaking();" type="button" value="PAUSE"/>
+          <input class="voiceButton" onclick="stopSpeaking();" type="button" value="STOP"/>
+        </header>
+
+        <ul id="discoverylog">
+            <li id="week1"><h5><input class="btn" onclick="read('week1');" type="button" value="PLAY"/> Week 1 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week1"></a>
               <p>
-                Virtual machine started properly, after being started in INDADD
-                Interacted with various text editors, such as Notepad++, Atom, Brackets, etc.
-                Also completed the website awards.
-                Sometimes even when you don't understand the purpose of the task it can still be important.
-                A few weeks later, in week 12, i finally understood that by looking at supposedly "good" and "bad" websites, we can better understand how to design our own websites.
-                Unfortunately, you need to look at multiple examples of websites to properly grasp the ideas of "good" web design.
-                The websites that you would look at may use bad or invalid HTML and will typically use HTML which you haven't been introduced to.
-                This can be used as a way to extend how much of HTML you understand since you can look up the specific idea and use this to further your undersanding.
+                We were introduced to the course. We were introduced to the time management skills too so that we would be able to pass this course.
+                We were also introduced to Turnitin, which we can use to check our future coursework.
+                The time management problem is a very important thing to consider as I am attending a university.
+                There have been no deadlines released yet, but I think that checking out the various time management techniques
+                might come in handy. That is why I visited all the sites provided by our lecturer, where I could see many
+                solutions to such problem.
               </p>
             </li>
-          <li class="anchor" id="week3"><strong>Week 3</strong>
+            <li id="week2"><h5><input class="btn" onclick="read('week2');" type="button" value="PLAY"/> Week 2 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week2"></a>
               <p>
-                Learnt that a large amount of data is stored about everyone by various companies.
-                This includes such things as what I typically buy, my age, interests, etc.
-                As well as this, The distinction between sensitive and secret information was explored.
-                This isn't as bad as it sounds since for most companies at least it is used to improve and tailor the experience for you.
-                It will give you deals that based on other purchases it thinks youd be interested in or recommend something, as well as various other things.
-                However, after doing the literature review, week 8, it was made clear that the companies intentions aren't the only ones you need to consider.
-                The security of the data is paramount since if your data is leaked to a malicious third party, then they could potentially do a large amount of damage using this seemingly trivial data.
+                This week we started to use VMs (Virtual Machines). It took me a while to get used to operate it, as all of it was totally new to me.
+                We also interacted with new text editors like Atom, Notepad++, Brackets... I personally really like the Atom, so I tried to write some simple html
+                code in it already. It looks perfect. We also looked at the website awards, which could later help me to distinguish between a good and a bad website,
+                as developing one is one of our courseworks.
               </p>
             </li>
-          <li class="anchor" id="week4"><strong>Week 4</strong>
-            <p>
-              The Literature review was discussed and the fine points explained.
-              Google's advanced search was useful for finding proper academic articles.
-              You cannot begin to research in a topic area without first properly finding and reviewing the current state of the area of research.
-            </p>
-          </li>
-          <li class="anchor" id="week5"><strong>Week 5</strong>
-            <p>
-              The proper was to write a literature review was introduced.
-              The voice must be passive and cautious and must not go to deep into a single source, nor should it only skim upon various details of the topic.
-              Phrasing is vitally important in a literature review, due to the fact that it might not convey the proper meaning that the author had intended.
-              This could lead to a misunderstanding of those who are reading the review and may cause wrong ideas about the topic area to arise from this.
-              The author must not have his opinion anywhere in the text, this is because an opinion inherently contains bias, and a literature review is simply to provide a document about a particular subject.
-            </p>
-          </li>
-          <li class="anchor" id="week6"><strong>Week 6</strong>
-            <p>
-              This week, HTML was introduced.
-              The basics of the language were covered, including how to properly set up a file to begin adding content.
-              The way in which you navigate from page to page was also included, which would be by using an "a" tag.
-              The few special characters were introduced, there were &lt;, &amp; and &gt;.
-              The first page I created in this only consisted of some unformatted text.
-            </p>
-          <picture>
-            <source srcset="pictures/Website1.PNG">
-            <img src="pictures/oldbrowser.png" alt="This image contains text advising you that your browser is too old." >
-          </picture>
-          <p>
-            The second page would involve a moving gif as well as a hyperlink to google, however there was still no formatting present
-          </p>
-          <picture>
-            <source srcset="pictures/Website2.PNG">
-            <img src="pictuers/oldbrowser.png" alt="This image contains text advising you that your browser is too old." >
-          </picture>
-          </li>
-          <li class="anchor" id="week7"><strong>Week 7</strong>
-            <p>
-              The first draft of the literature review was due in.
-              I learnt that it would be peer reviewed and so i would be required to mark 5 of my peer's work.
-              This meant that i would have to know the marking criteria in order to give fair responses as well as hope that those marking mine were better than i was, so i could get the best feedback possible.
-            </p>
-          </li>
-          <li class="anchor" id="week8"><strong>Week 8</strong>
-            <p>
-              This week focussed on separating form and content from my HTML files.
-              This would be done by employing a Cascading Style Sheet (CSS).
-              This would allow me to set various parameters whereby i could change the formatting, positioning, etc. of a specific piece of content on the page.
-              This was coupled with the idea that it is bad practice to have form and content, i.e. HTML and css in a single HTML document.
-              This is because it is much harder to maintain and add or remove content from a page if the styling is adding to the size and getting in the way.
-              As well as this, having a separate CSS file will prevent procedural website generation, since that could look different on various devices.
-              I was also introduced to the "link" tag which would allow me to link a HTML page to a CSS sheet in order for me to use the various form changing pieces written in the Style Sheet.
-            </p>
-            <p>
-            Link Tag Example:
-            </p>
-            <picture>
-              <source srcset="pictures/LinkTag.PNG">
-              <img src="pictures/oldbrowser.png" alt="Image advising that your browser is old">
-            </picture>
-            <p>
-              Various things such as text colour and text background colour was also introduced, allowing for a custom preset for each piece of text entered.
-              The difference between class selectors and id selectors was also explained.
-            </p>
-            <p>
-              CLass Example:
-            </p>
-            <picture>
-              <source srcset="pictures/ClassExample.PNG">
-              <img src="pictures/oldbrowser.png" alt="Image advising that your browser is old">
-            </picture>
-            <p>
-              ID Example:
-            </p>
+            <li id="week3"><h5><input class="btn" onclick="read('week3');" type="button" value="PLAY"/> Week 3 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week3"></a>
+              <p>
+                This week we learnt about web security. A lot of data about me may be stored by any company, while I would not even notice. It is happening
+                on a daily basis: when we are buying something over the internet, or setting a new account at some social media. I have learnt that we need to be
+                actually paranoid and expect that everyone wants some data about me so that we can secure ourselves.
+              </p>
+            </li>
+            <li id="week4"><h5><input class="btn" onclick="read('week4');" type="button" value="PLAY"/> Week 4 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week4"></a>
+              <p>
+                The literature review is my first coursework, so I will need to think about it in advance. We were introduced to Google Scholar and the
+                University of Portsmouth Discover, which both are great in finding what we will need for our reviews. The references must be reliable
+                and thanks to these search engines, we can find what we need much quicker. I also have learnt to firstly use a mind map
+                before starting the actual writing of a review.
+              </p>
+            </li>
+            <li id="week5"><h5><input class="btn" onclick="read('week5');" type="button" value="PLAY"/> Week 5 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week5"></a>
+              <p>
+                We were given much more details on the literature review and how it should be written. I found it really helpful, as I had
+                almost no idea about it. It is a formal academic writing, which means that it should be logical, structural, thoughtful and evidence based.
+                The referencing is a little complicated too. And we should definitely avoid subjective writing. Later on I found some good examples of literature reviews
+                on the internet and understood most of the points made during the lectures.
+              </p>
+            </li>
+            <li id="week6"><h5><input class="btn" onclick="read('week6');" type="button" value="PLAY"/> Week 6 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week6"></a>
+              <p>
+                We were finally officially introduced to HTML. A website cannot be created without using HTML, therefore it is an enormously important
+                language, when it comes to developing a website (which is the next coursework after literature review). I also created my second page
+                during the practicals, as I already tried it sooner. Now I also used the
+                <a href="https://www.w3schools.com/tags/tag_a.asp"><strong>anchor</strong></a> tag, which can be used to navigate between various pages.
+              </p>
+            </li>
+            <li id="week7"><h5><input class="btn" onclick="read('week7');" type="button" value="PLAY"/> Week 7 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week7"></a>
+              <p>
+                This was a reading week, meaning that the first draft of literature review was due in. After that, we will have to review
+                each others' works and we will get feedback from ourselves. That way we can improve our work enormously. While reviewing the
+                work of others, we will also need to be aware of the marking criteria, which is another huge benefit, resulting
+                in even better final work.
+              </p>
+            </li>
+            <li id="week8"><h5><input class="btn" onclick="read('week8');" type="button" value="PLAY"/> Week 8 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week8"></a>
+              <p>
+                This week we were introduced to CSS as an instrument for styling a website. The best way to create a website is to
+                separate content from the form. So that the content stays in HTML file, which will be linked to a CSS file, determining the form of the page.
+                CSS - Cascading Style Sheet - is very powerful, as it was shown in the lecture, one can do almost impossible stuff with it.
+                The look of a website can be unbelievably changed. We have also learnt about class selectors and id selectors and I took some time
+                to understand the difference appropriately.
+              </p>
+            </li>
+            <li id="week9"><h5><input class="btn" onclick="read('week9');" type="button" value="PLAY"/> Week 9 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week9"></a>
+              <p>
+                It is all about efficiency. We have learnt how to develop a website the most efficiently possible. We were also told,
+                how we can customize our editors so that the efficiency will be higher. Also we saw many plugins that we can install
+                to Atom, for example. I instantly downloaded the plugin, which checks the HTML document for any syntax errors.
+              </p>
+            </li>
+            <li id="week10"><h5><input class="btn" onclick="read('week10');" type="button" value="PLAY"/> Week 10 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week10"></a>
+              <p>
+                This week was about the perfect design. We have learnt that the way in which we design the website is VERY important.
+                Bad designs tend to cause human errors when using the application and that can lead to horrible consequences.
+                The understanding of the user is always the crucial aspect in creating the application.
+              </p>
+            </li>
+            <li id="week11"><h5><input class="btn" onclick="read('week11');" type="button" value="PLAY"/> Week 11 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week11"></a>
+              <p>
+                This week we were introduced to the proper way to insert images into a webpage. We should use the <strong>picture</strong> tag
+                instead of using only the <strong>img</strong> tag. In the picture element we can put more images and the browser can display
+                one of those according to various conditions that we make. For example, when the screen gets wider, the image changes to a
+                bigger image.
+              </p>
+              <p>
+                Just like this image. When you try to resize the window, the photo will change:
+              </p>
               <picture>
-                <source srcset="pictures/IDExample.PNG">
-                <img src="pictures/oldbrowser.png" alt="Image advising that your browser is old">
+                <source media="(max-width: 800px)" srcset="img/puppy.jpg">
+                <source media="(max-width: 1100px)" srcset="img/wolf.jpg">
+                <img src="img/bear.jpg" alt="This is an example image">
               </picture>
-            <p>
-              The difference is that Class selectors are used to style multiple entities on the screen whereas id's, since they must be unique, are only used to style a single entity.
-            </p>
-          </li>
-          <li class="anchor" id="week9"><strong>Week 9</strong>
-            <p>
-              This week was primarily focussed on efficiency.
-              The way in which you can style an editor to your liking was explained, using Atom as a primary example.
-              Various plugins were suggested, one of which allowed a preview page for the HTML file, this would be useful to see how it looks before uploading it.
-              Snippets for the text editors were briefly introduced, however as of yet it is not a neccesity.
-              A way in which you can work more efficiently is such things as using keyboard shortcuts or using Ctrl+Click to have multiple cursors on the screen to edit multiple elements at once.
-            </p>
-          </li>
-          <li class="anchor" id="week10"><strong>Week 10</strong>
-            <p>
-              This week, we were taught about design. The idea of properly designing the website, even for users that i do not expect is very important.
-              Designing for the future is also important because in the future it may be easier to simply continue to use my design, rather than go through and completly redesign the website.
-              Creating a responsive and overall intuitive design is difficult becuase you need to think about every user that will use your site.
-              This is important because and older person wouldn't interpret elements on the screen the same way a younger person would.
-            </p>
-          </li>
-          <li class="anchor" id="week11"><strong>Week 11</strong>
-            <p>
-              This week the proper syntax for including pictures in an HTML setting was introduced.
-              The "img" tag is a backup tag incase the browser that the user is using absolutely cannot use any other kind of format.
-              The preferred tag would be the "picture" tag.
-            </p>
-            <p>
-              Example Picture Tag:
-            </p>
-              <picture>
-                <source srcset="pictures/PicExample.PNG">
-                <img src="pictures/oldbrowser.png" alt="Image advising that your browser is old">
-              </picture>
-            <p>
-              This would allow the user to set different pictures to be displayed under different parameters, such as the size of the window of the browser.
-              It can also set up various backup pictures in case the browser is unable to properly load and display the picture.
-              The picture tag can also incorporate the img tag as a last resort backup.
-              This helps make the website more dynamic since users will use devices with varying screen sizes and resolutions.
-              Thus it is imperative to properly cater to, at the very least, the vast majority in order to allow any user to browse the site with relative ease.
-            </p>
-          </li>
-          <li class="anchor" id="week12"><strong>Week 12</strong>
-            <p>
-              Feedback was given on my website before the christmas holidays became underway.
-              The primary ideas given were that my website was not dynamic from different sizes as well as the text, header and navigation regions not being properly defined.
-              The way to rectify this was by initially using the @media tag in css in order to allow for different formatting at different sizes.
-              This prevents the formatting from colliding with other elements at different resolutions, devices, etc.
-              The other method introduced was the flexbox as well as the grid elements.
-            </p>
-            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Page demonstrating how to properly use flexbox mechanics</a>
-            <p>
-              These can be used to properly set up the dimentions and formatting of a page, giving a navigation panel the proper area it needs.
-              This would also allow the main body of text to flex and flow around the changing dimentions of the webpage navigation bar as well as the page's navigation panel.
-              A page for "Flex testing" was creating in order to allow me to practice and properly understand how to use both elements without breaking or simply making a mess of the rest of my site.
-            </p>
-          </li>
-          <li class="anchor" id="week13"><strong>Week 13</strong>
-            <p>
-              In Week 13 the Website Peer Review Marking Scheme was released so that we would know what we need to incorporate or avoid on our websites.
-              This mentioned things such as anonymity being key and properly using CSS selectors and HTML tags for the page
-              We also had to provide a link to the HTML validation page which would not only take the user there, but also automatically provide the URL of our websites on the web server.
-              This turned out to be a simple fix, as to accomodate this you simply need to add "/check?uri=referer" after the forward slash.
-            </p>
-          </li>
-          <li class="anchor" id="week14"><strong>Week 14</strong>
-            <p>
-              Addressing on the web was talked about.
-              I began to use small amounts of javascript, trying to understand how it works and how it could improve my page.
-              The way of programming was complicated, though i could see how it could be used for highly reponsive design.
-              This would be examples of how far you had scrolled, or whether you had clicked on something.
-              This could be used with listeners to change variables to further tailor the user's experience based on where they were looking on the page, more so than that of :hover, :active, etc.
+            </li>
+            <li id="week12"><h5><input class="btn" onclick="read('week12');" type="button" value="PLAY"/> Week 12 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week12"></a>
+              <p>
+                We were given much more information about the second coursework this week (a website of our own). I tried to use
+                more complicated CSS selectors in my website, so that when the screen is crushed to only 600px wide, it will still
+                look nice. This could be accomplished by using the <strong>@media tag</strong>, in which one can change the style
+                of any elements according to the size of the screen for example.
+              </p>
+              <p>
+                I also used it in this website. If you would like to see it, just <strong>make the screen 600px or less wide</strong> and you will see that
+                the navigation bar will behave differently. It enlarges to the whole screen, so that it will be much more user-friendly
+                on mobile devices too.
+              </p>
+            </li>
+            <li id="week13"><h5><input class="btn" onclick="read('week13');" type="button" value="PLAY"/> Week 13 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week13"></a>
+              <p>
+                This week the Marking Scheme was released. This way, we were finally confirmed about the details that we should or should not include
+                in our websites. For example, there should be the <strong>W3C validation links</strong> everywhere, which would automatically
+                validate the webpage.
+              </p>
 
-            </p>
-          </li>
-          <li class="anchor" id="week15"><strong>Week 15</strong>
-            <p>
-              Accessability was talked about and the importance of accomodating people with disabilities was stressed.
-
-            </p>
-          </li>
-          <li class="anchor" id="week16"><strong>Week 16</strong>
-            <p>
-              <img class="svgimage" src="svg/diamondboxes.svg" alt="" />
-              Today i leant how to make random pieces of colour and excitement on my page in the form of svg images.
-            </p>
-          </li>
-        </ul>
-
-
-    </div>
+              <p>
+                As you can see, I included it in my webpage as <strong>part of my navigation bar</strong>, so that it can be visible from any website.
+              </p>
+            </li>
+            <li id="week14"><h5><input class="btn" onclick="read('week14');" type="button" value="PLAY"/> Week 14 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week14"></a>
+              <p>
+                This week the lecturer talked about addressing on the web. There are multiple ways to navigate through a website.
+                I already decided to have multiple HTML files, which are all connected by anchors in the navigation bar included in each of the pages.
+                That way, when you click for example <strong><a href="about.html">here</a></strong>, you will be <strong>redirected to one of my other pages</strong>. But there are also
+                other possible ways to achieve this, for example by setting up only one HTML page and the navigation would only send you to an exact part of
+                the page, which would be related to what the user is looking for.
+              </p>
+            </li>
+            <li id="week15"><h5><input class="btn" onclick="read('week15');" type="button" value="PLAY"/> Week 15 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week15"></a>
+              <p>
+                This week we talked about accessibility. That is a very important topic, as the website should be accessible to the most people possible.
+                One of the best ways to achieve this is not setting the font-size to a specific value. I should let the user decide how big would the font be.
+                Also, for users, who cannot use mouse for example, they can <strong>navigate through the site using the TAB key</strong>, just like in my website.
+                On top of that, <strong>I included the Responsive Voice into my website</strong>, so that the text could be read to the user using javascript.
+              </p>
+            </li>
+            <li id="week16"><h5><input class="btn" onclick="read('week16');" type="button" value="PLAY"/> Week 16 <input class="btn" onclick="stopSpeaking();" type="button" value="STOP"/></h5>
+              <a name="week16"></a>
+              <p>
+                The week 16 was about SVG pictures. Their most interesting feature is that they are ALWAYS in the best quality. Because it is not just a photo made of pixels,
+                its quality is never degraded. It only has the instructions like line from here to here, and circle right there, etc. That means that one can zoom infinitely
+                into the picture and it still will have perfect quality.
+              </p>
+            </li>
+          </ul>
+      </article>
+    </main>
   </body>
 </html>

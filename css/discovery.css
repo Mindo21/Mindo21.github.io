@@ -1,0 +1,154 @@
+#weeksidebar {
+  position: fixed;
+  width: 50px;
+  height: 100%;
+  background: #712A70;
+  top: 0;
+  left: calc(100% - 50px);
+  transition: 0.3s;
+  z-index: 2;
+  box-shadow: -10px 0px 20px #555;
+}
+
+#weeksidebar ul {
+  text-align: center;
+  list-style: none;
+  display: table;
+  padding: 15px 0 0 10px;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#weeksidebar ul li {
+  text-align: center;
+  display: table-row;
+  width: 100%;
+}
+
+#weeksidebar ul li a {
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #bbb;
+}
+
+#weeksidebar ul li a:before {
+  content: attr(id);
+}
+
+#weeksidebar ul li a:after {
+  content: "";
+}
+
+#weeksidebar:hover {
+  width: 85px;
+  left: 100%;
+  transform: translateX(-100%);
+}
+
+#weeksidebar ul li a:hover {
+  color: white;
+}
+
+#weeksidebar:hover ul li a:before {
+  content: "";
+}
+
+#weeksidebar:hover ul li a:after {
+  content: attr(name);
+}
+
+#container {
+  min-height: 100%;
+}
+
+#container h1 {
+  text-align: center;
+  font-size: 3em;
+  font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+}
+
+#discoverylog {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style: none;
+}
+
+#discoverylog li {
+  background: white;
+  border: solid #712A70 5px;
+  border-radius: 8px;
+  margin: 15px 0;
+  padding: 10px 20px;
+}
+
+#discoverylog li h5 {
+  font-size: 1.6em;
+  margin: 10px 0;
+  font-family: Copperplate,"Copperplate Gothic Light",fantasy;
+}
+
+#discoverylog li picture {
+  width: 100%;
+}
+
+#discoverylog li picture img {
+  width: 100%;
+  border: 0;
+  border-radius: 8px;
+}
+
+#voiceSection {
+  width: calc(100% - 10px);
+  overflow: hidden;
+  text-align: center;
+  border: solid #712A70 5px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.voiceInstructions {
+  color: #222;
+  padding: 5px 10px;
+  font-size: 1.2em;
+}
+
+input[type="button"] {
+  /*font-size: 1em;*/
+  background: #399fe3;
+  background-image: -webkit-linear-gradient(top, #399fe3, #236b94);
+  background-image: -moz-linear-gradient(top, #399fe3, #236b94);
+  background-image: -ms-linear-gradient(top, #399fe3, #236b94);
+  background-image: -o-linear-gradient(top, #399fe3, #236b94);
+  background-image: linear-gradient(to bottom, #399fe3, #236b94);
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  color: #ffffff;
+  padding: 5px 15px;
+  margin: 5px;
+  border: solid #712A70 0;
+}
+
+input[type="button"]:hover, input[type="button"]:focus {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3081b8);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3081b8);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3081b8);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3081b8);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3081b8);
+  margin: 0;
+  border: solid #712A70 5px;
+}
+
+input[type="button"].voiceButton {
+  padding: 10px 20px 10px 20px;
+  margin: 15px;
+}
+
+input[type="button"].voiceButton:hover, input[type="button"].voiceButton:focus {
+  margin: 10px;
+}
