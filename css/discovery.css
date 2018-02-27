@@ -68,6 +68,10 @@
   list-style: none;
 }
 
+#discoverylog a {
+  text-decoration: none;
+}
+
 #discoverylog li {
   background: white;
   border: solid #712A70 5px;
