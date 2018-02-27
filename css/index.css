@@ -4,6 +4,7 @@ html {
 
 #container {
   min-height: 100%;
+  text-align: center;
 }
 
 #container h1 {
@@ -14,4 +15,42 @@ html {
 
 #container p {
   text-align: center;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+#container section {
+  margin: 40px 0;
+}
+
+#container #homepagelinks {
+  border: solid #712A70 5px;
+  border-radius: 8px;
+  background: white;
+  padding: 0 15px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 600px;
+}
+
+#container #punpictures {
+  text-align: center;
+}
+
+#container #punpictures img {
+  border: solid #712A70 5px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 350px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 400px) {
+  #container h1 {
+    font-size: 2em;
+  }
 }

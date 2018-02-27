@@ -170,15 +170,17 @@ input[type="button"].voiceButton:hover, input[type="button"].voiceButton:focus {
 }
 
 @media screen and (max-width: 600px) {
-  #container h1 {
-    font-size: 2em;
-  }
-
   #discoverylog li h5 {
     font-size: 1.2em;
   }
 
   #sidebar.active + #container #weeksidebar {
     left: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #container h1 {
+    font-size: 2em;
   }
 }
