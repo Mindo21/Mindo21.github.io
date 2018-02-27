@@ -239,6 +239,7 @@ ul.validatorlinks {
 
 
 @media screen and (max-width: 600px) {
+
   #sidebar {
     width: 75%;
     left: -75%;
