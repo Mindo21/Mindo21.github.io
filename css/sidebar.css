@@ -15,9 +15,7 @@ img {
 }
 
 img:hover {
-  filter: invert();
-  filter: -moz-invert();
-  filter: -webkit-invert();
+  filter: brightness(150%);
 }
 
 #sidebar {
@@ -107,8 +105,8 @@ a.logo picture img {
 #sidebar .navigation ul li {
   text-align: center;
   margin: 0px 0px;
-  width: 100% - 6px;
-  border-left: 6x solid rgba(0, 0, 0, 0);
+  width: calc(100% - 6px);
+  border-left: 6px solid rgba(0, 0, 0, 0);
   transition: 0.3s;
 }
 
@@ -263,7 +261,6 @@ ul.validatorlinks {
 
 @media screen and (max-height: 470px) {
   #sidebar .navigation a.logo, #sidebar ul.validatorlinks {
-    pointer-events: none;
     cursor: default;
     opacity: 0;
   }

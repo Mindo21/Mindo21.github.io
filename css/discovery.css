@@ -43,7 +43,7 @@
 }
 
 #weeksidebar ul li a:after {
-  content: attr(id);
+  content: "W" attr(id);
 }
 
 #weeksidebar ul li a:hover {
@@ -163,13 +163,13 @@ input[type="button"].voiceButton:hover, input[type="button"].voiceButton:focus {
 
   @keyframes changeWeeks {
     0% {
-      content: attr(id);
+      content: "W" attr(id);
     }
     50% {
       color: #712A70;
     }
     100% {
-      content: attr(name);
+      content: "Week " attr(id);
     }
   }
 }
