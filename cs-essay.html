@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/cs-essay.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <script src="js/sidebar.js"></script>
+  </head>
+  <body>
+    <section id="sidebar" class="active">
+      <figure class="icon" onclick="toggleNavbar()">
+        <figure class="hamburger">
+        </figure>
+      </figure>
+
+      <nav class="navigation">
+        <a href="http://www.port.ac.uk/" target="_blank" class="logo">
+          <picture>
+            <source media="(max-height: 720px)" srcset="img/unilogo.png">
+            <source media="(max-width: 600px)" srcset="img/unilogo.png">
+            <img src="img/miniLogo.png" alt="University Logo">
+          </picture>
+        </a>
+
+        <ul>
+          <li><a><span>Home</span></a></li>
+          <li><a href="about.html"><span>About</span></a></li>
+          <li><a href="litreview.html"><span>Literature Review</span></a></li>
+          <li class="selected"><a href="cs-essay.html"><span>Computer Science Essay</span></a></li>
+          <li><a href="discovery.html"><span>Discovery Log</span></a></li>
+          <li><a href="http://www.port.ac.uk/" target="_blank" onclick="loseFocus();"><span>University of Portsmouth</span></a></li>
+        </ul>
+
+        <ul class="validatorlinks">
+          <li><a href="https://validator.w3.org/check?uri=referer" target="_blank" onclick="loseFocus();"><span>W3C Markup Validator</span></a></li>
+          <li><a href="https://jigsaw.w3.org/css-validator/check?uri=referer&" target="_blank" onclick="loseFocus();"><span>W3C CSS Validator</span></a></li>
+        </ul>
+
+      </nav>
+    </section>
+
+    <main id="container" class="pdfContainer">
+        <embed src="pdf/ExtendedEssayMinarovic.pdf" type="application/pdf"/>
+    </main>
+
+  </body>
+</html>

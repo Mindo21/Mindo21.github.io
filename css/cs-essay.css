@@ -1,0 +1,13 @@
+html {
+  min-height: 100%;
+}
+
+embed {
+    width: 100%;
+    height: 100%;
+}
+
+#container.pdfContainer {
+    padding: 0;
+    height: 100vh;
+}
